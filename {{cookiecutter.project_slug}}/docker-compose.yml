@@ -12,10 +12,12 @@ services:
       - ./{{cookiecutter.project_slug}}/src:/src
       - ./{{cookiecutter.project_slug}}/tests:/tests
     ports:
-      - "80:80"
+      - "8000:8000"
     depends_on:
       - db
-
+    env_file:
+      - ./.env
+      
   db:
     container_name: postgresql_db
     image: postgres:14.2-bullseye
