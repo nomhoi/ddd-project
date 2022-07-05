@@ -10,7 +10,7 @@ https://github.com/nightriddler/fastapi_realworld
 
 * Full **Docker** integration (Docker based).
 * **Docker Compose** integration and optimization for local development.
-* **SQLAlchemy** models (independent of Flask extensions, so they can be used with Celery workers directly).
+* **SQLAlchemy** models.
 * **Alembic** migrations.
 * **Poetry**.
 * **Pytest**.
